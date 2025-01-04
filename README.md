@@ -13,7 +13,7 @@ This feature displays how ratings are distributed for a given professor. It maps
 
 **Example Output**:
 
-![Rating Distribution by Professor](/finalproject/Sample Run/Screenshot 2025-01-04.png)
+!(/Sample Run/Screenshot 2025-01-04.png)
 
 ### 2. Rating Count Per Professor for a Selected School
 
@@ -21,7 +21,7 @@ This feature shows the rating distribution within a selected school. It maps pro
 
 **Example Output**:
 
-![Rating Count Per Professor](/finalproject/Sample Run/Screenshot 2025-01-04 2.png)
+!(/finalproject/Sample Run/Screenshot 2025-01-04 2.png)
 
 ### 3. Gender Distribution by Keyword
 
@@ -29,7 +29,7 @@ This feature evaluates the gender distribution for specific keywords in reviews.
 
 **Example Output**:
 
-![Gender Distribution by Keyword](/finalproject/Sample Run/Screenshot 2025-01-04 3.png)
+!(/finalproject/Sample Run/Screenshot 2025-01-04 3.png)
 
 ### 4. Rating Distribution by Keyword
 
@@ -37,7 +37,7 @@ This feature shows the distribution of ratings associated with a specific keywor
 
 **Example Output**:
 
-![Rating Distribution by Keyword](/finalproject/Sample Run/Screenshot 2025-01-04 4.png)
+!(/Sample Run/Screenshot 2025-01-04 4.png)
 
 ### 5. Rating by Gender
 
