@@ -5,28 +5,48 @@
 
 This project was developed as part of **COMP 250 Winter 2023**. It focuses on analyzing professor reviews from **RateMyProfessors.com** using a custom hash table implementation and data visualization. The dataset includes detailed reviews of university professors, with attributes such as ratings, comments, and perceived gender.
 
-The primary objectives of the project were to:
-1. Implement a generic hash table with efficient operations.
-2. Build data analysis tools to extract meaningful insights from the dataset.
-3. Create a user-friendly GUI using JavaFX to visualize the results.
-
 ## Features
 
-1. **Custom Hash Table**:
-   - A generic hash table (`MyHashTable<K, V>`) supporting core operations (`put`, `get`, `remove`, `rehash`) with average constant time complexity.
-   - Supports dynamic resizing and iteration over key-value pairs.
+### 1. Rating Distribution by Professor
 
-2. **Data Analysis Tools**:
-   - `RatingDistributionByProf`: Displays the distribution of ratings for a specific professor.
-   - `RatingDistributionBySchool`: Shows rating counts and averages for professors in a given school.
-   - `GenderByKeyword`: Analyzes the frequency of specific keywords in reviews based on professor gender.
-   - `RatingByKeyword`: Displays rating distribution associated with different keywords.
-   - `RatingByGender`: Shows the distribution of quality and difficulty ratings by gender.
+This feature displays how ratings are distributed for a given professor. It maps the ratings into five categories ("1", "2", "3", "4", "5") and returns the count of reviews in each category.
 
-3. **Graphical User Interface (GUI)**:
-   - Developed using **JavaFX** with a clean and intuitive layout defined in `scene.fxml`.
-   - GUI controls user interactions and displays results in various chart formats (e.g., bar charts, line graphs).
-   - Styled using `style.css` for a polished user experience.
+**Example Output**:
+
+![Rating Distribution by Professor](/finalproject/Sample Run/Screenshot 2025-01-04)
+
+### 2. Rating Count Per Professor for a Selected School
+
+This feature shows the rating distribution within a selected school. It maps professor names to the number of reviews received along with their average ratings.
+
+**Example Output**:
+
+![Rating Count Per Professor](/finalproject/Sample Run/Screenshot 2025-01-04 2)
+
+### 3. Gender Distribution by Keyword
+
+This feature evaluates the gender distribution for specific keywords in reviews. It maps genders ("M", "W", "X") to the number of times the input word appears in reviews for professors.
+
+**Example Output**:
+
+![Gender Distribution by Keyword](/finalproject/Sample Run/Screenshot 2025-01-04 3)
+
+### 4. Rating Distribution by Keyword
+
+This feature shows the distribution of ratings associated with a specific keyword. It maps the ratings ("1", "2", "3", "4", "5") to the count of reviews containing the keyword.
+
+**Example Output**:
+
+![Rating Distribution by Keyword](/finalproject/Sample Run/Screenshot 2025-01-04 4)
+
+### 5. Rating by Gender
+
+This feature displays the distribution of quality and difficulty ratings by gender. It returns the count of reviews for each rating category based on the specified gender.
+
+**Example Output**:
+
+![Rating by Gender - Quality](Screenshot%202025-01-04%20at%206.06.44%20PM.png)
+![Rating by Gender - Difficulty](Screenshot%202025-01-04%20at%206.06.52%20PM.png)
 
 ## Technologies Used
 
@@ -88,16 +108,6 @@ The primary objectives of the project were to:
 - **`Controller.java`**: Handles user interactions and updates the GUI with analysis results.
 - **`style.css`**: Provides styling rules for the JavaFX GUI, ensuring a clean and visually appealing interface.
 - **`Main.java`**: Serves as the entry point for launching the JavaFX application.
-
-### Data Analysis Classes
-
-- **Abstract Class**: `DataAnalyzer` defines the core structure for data analysis tasks, with methods `extractInformation()` and `getDistByKeyword()` to be implemented by subclasses.
-- **Subclasses**:
-  - `RatingDistributionByProf`: Analyzes rating distribution for a specific professor.
-  - `RatingDistributionBySchool`: Computes rating counts and averages for professors in a given school.
-  - `GenderByKeyword`: Evaluates keyword frequency based on professor gender.
-  - `RatingByKeyword`: Displays rating distribution for specific keywords.
-  - `RatingByGender`: Shows quality and difficulty rating distribution by gender.
 
 ## Success Criteria
 
