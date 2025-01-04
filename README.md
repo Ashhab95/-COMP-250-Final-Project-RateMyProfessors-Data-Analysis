@@ -13,7 +13,7 @@ This feature displays how ratings are distributed for a given professor. It maps
 
 **Example Output**:
 
-![Rating Distribution by Professor](Sample%20Run/Screenshot%202025-01-04.png)
+![Rating Distribution by Professor](Sample%20Run/Screenshot%202025-01-04%201.png)
 
 ### 2. Rating Count Per Professor for a Selected School
 
